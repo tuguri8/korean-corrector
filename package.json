@@ -6,6 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "https://github.com/tuguri8/korean-corrector",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tuguri8/korean-corrector.git"
+  },
   "author": "HAN SEUNGWOO <tuguri8@gmail.com> (http://https://github.com/tuguri8/)",
   "license": "MIT",
   "devDependencies": {

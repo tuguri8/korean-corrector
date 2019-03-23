@@ -76,7 +76,7 @@ const correctByDict = (word, chosung=true) => {
 
 
 module.exports = {
-  distance: distance,
+  getDistance: getDistance,
   correct: correct,
   correctByDict: correctByDict,
 }
