@@ -1,5 +1,6 @@
 const Hangul = require('hangul-js');
 const fs = require('fs');
+const path = require('path');
 
 function leven_distance(firstWord, secondWord) {
       if (!firstWord.length) return secondWord.length;
@@ -47,7 +48,7 @@ const correct = (word, arr, chosung=true) => {
 };
 
 const correctByDict = (word, chosung=true) => {
-  let korean_dict = fs.readFileSync('./korean_dict.json', 'utf8');
+  let korean_dict = fs.readFileSync(path.resolve(__dirname, './korean_dict.json', 'utf8'));
   korean_dict = JSON.parse(korean_dict);
   let changed = 99999;
   let changedWord = word;
